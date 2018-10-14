@@ -12,24 +12,58 @@ and open the template in the editor.
     </head>
     <body>
        <!--NAVIGATION BAR ------------------------->
-        <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-li {
-    display: inline;
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 </style>
-     <ul class="">
-  <li><a href="index.html">HOME</a></li>
-  <li><a href="#new_project">NEWS</a></li>
-  <li><a href="workspace.html">PROJECTS</a></li>
-  <li><a href="#contact">CONTACT</a></li>
-  <li><a href="about.html">ABOUT</a></li>
-</ul>   
+
+<div class="dropdown">
+  <button class="dropbtn">PressRoom</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
+
 <!--NAVIGATION BAR END------------------------------------------>
         
         <style>

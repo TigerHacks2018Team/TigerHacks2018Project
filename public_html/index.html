@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Pressroom</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,30 +13,65 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
     </head>
       <body>
         
         
  <!--NAVIGATION BAR ------------------------->
-        <style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
 
-li {
-    display: inline;
+.dropdown {
+    position: absolute;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
 }
 </style>
-     <ul class="">
-  <li><a href="#home">HOME</a></li>
-  <li><a href="#new_project">NEWS</a></li>
-  <li><a href="projects.html">PROJECTS</a></li>
-  <li><a href="#contact">CONTACT</a></li>
-  <li><a href="#about">ABOUT</a></li>
-</ul>   
+
+<div class="dropdown">
+  <button class="dropbtn">PressRoom</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+
 <!--NAVIGATION BAR END------------------------------------------>
+
 
 
 
@@ -60,7 +95,7 @@ li {
             
 .bg {
     /* The image used */
-    background-image: url("images/newspaper.jpeg");
+
 
     /* Full height */
     height: 100%;
@@ -70,7 +105,8 @@ li {
     background-repeat: no-repeat;
     background-size: cover;
 }</style>
-       <div class="bg"> </div>
+        img{z-
+       <div class="bg"><img src="images/newspaper.jpeg" alt="news"/> </div>
 
 
         <!--[if lt IE 8]>
